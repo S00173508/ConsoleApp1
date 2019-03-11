@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div align="center">
+    <h2>Insurance Premium :)</h2> @using (Html.BeginForm())
+    {
+        <table>
+            <tr>
+                <th> Gender </th>
+                <td> <input type="text" id="gender" name="gender" class="form-control" /> </td>
+            </tr>
+            <tr>
+                <th> Age </th>
+                <td> <input type="text" id="age" name="age" class="form-control" /> </td>
+            </tr>
+            <tr>
+                <th><input type="submit" name="Cal" value="Calculate" class="btn btn-primary" /></th>
+           
+            </tr>
+            <tr>
+                <th>Result</th>
+                <td><input type="text" class="form-control" value="@ViewBag.Result" /> </td>
+            </tr>
+        </table>}
+</div>
+
+@*<form method="Post" id=" post">
+        <div class="form-group">
+            <label for="gender">Enter Gender</label>
+            <input type="text" class="form-control" name="Gender" id="Gender" placeholder="Gender">
+        </div>
+        <div class="form-group">
+            <label for="age">Enter Age</label>
+            <textarea class="form-control rounded-0" name="Age" id="Age" rows="1" placeholder="Enter Age"></textarea>
+        </div>
+        <span id="button1 ">
+            <button type="button" onclick="calcPremium()" class="btn addBtn ">Calculate Premium</button>
+
+        </span>
+        <div class="form-group">
+            <label for="text">Your Premium is:</label>
+            <textarea class="form-control rounded-0" name="Premium" id="Premium" rows="1" placeholder="">@ViewBag.premium</textarea>
+        </div>
+    </form>*@
